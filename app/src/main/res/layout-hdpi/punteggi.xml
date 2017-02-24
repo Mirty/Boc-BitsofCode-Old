@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent" android:layout_height="match_parent"
+                android:background="#F9F2E7">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="45dp"
         android:text="I tuoi punteggi:"
-        android:textColor="#000000"
+        android:textColor="#000"
         android:gravity="center"
-        android:id="@+id/textView" />
-
+        android:id="@+id/punteggi" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView"
-        android:id="@+id/scrollView">
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/punteggi">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -26,33 +29,35 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Livello1"
+                android:textAlignment="center"
                 android:textSize="30dp"
-                android:textColor="#000000"/>
+                android:id="@+id/l1"
+                android:textColor="#8BC34A"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="#000000"
+                    android:textColor="#64dd17"
                     android:text="Normale: 0"
                     android:textSize="20dp"
                     android:id="@+id/normale1"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#000000"
+                android:textColor="#ffd600"
                 android:text="Medio: 0"
                 android:textSize="20dp"
                 android:id="@+id/medio1"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#000000"
+                android:textColor="#e65100"
                 android:text="Difficile: 0"
                 android:textSize="20dp"
                 android:id="@+id/difficile1"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#000000"
+                android:textColor="#d50000"
                 android:text="Impossibile: 0"
                 android:textSize="20dp"
                 android:id="@+id/impossibile1"/>
@@ -64,33 +69,35 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Livello2"
+                android:textAlignment="center"
                 android:textSize="30dp"
-                android:textColor="#000000"/>
+                android:id="@+id/l2"
+                android:textColor="#00BCD4"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#000000"
+                android:textColor="#64dd17"
                 android:text="Normale: 0"
                 android:textSize="20dp"
                 android:id="@+id/normale2"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#000000"
+                android:textColor="#ffd600"
                 android:text="Medio: 0"
                 android:textSize="20dp"
                 android:id="@+id/medio2"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#000000"
+                android:textColor="#e65100"
                 android:text="Difficile: 0"
                 android:textSize="20dp"
                 android:id="@+id/difficile2"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#000000"
+                android:textColor="#d50000"
                 android:text="Impossibile: 0"
                 android:textSize="20dp"
                 android:id="@+id/impossibile2"/>
@@ -103,32 +110,34 @@
                 android:layout_height="wrap_content"
                 android:text="Livello3"
                 android:textSize="30dp"
-                android:textColor="#000000"/>
+                android:textAlignment="center"
+                android:id="@+id/l3"
+                android:textColor="#D84315"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#000000"
+                android:textColor="#64dd17"
                 android:text="Normale: 0"
                 android:textSize="20dp"
                 android:id="@+id/normale3"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#000000"
+                android:textColor="#ffd600"
                 android:text="Medio: 0"
                 android:textSize="20dp"
                 android:id="@+id/medio3"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#000000"
+                android:textColor="#e65100"
                 android:text="Difficile: 0"
                 android:textSize="20dp"
                 android:id="@+id/difficile3"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#000000"
+                android:textColor="#d50000"
                 android:text="Impossibile: 0"
                 android:textSize="20dp"
                 android:id="@+id/impossibile3"/>
@@ -140,33 +149,35 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Livello4"
+                android:id="@+id/l4"
+                android:textAlignment="center"
                 android:textSize="30dp"
-                android:textColor="#000000"/>
+                android:textColor="#6A1B9A"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#000000"
+                android:textColor="#64dd17"
                 android:text="Normale: 0"
                 android:textSize="20dp"
                 android:id="@+id/normale4"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#000000"
+                android:textColor="#ffd600"
                 android:text="Medio: 0"
                 android:textSize="20dp"
                 android:id="@+id/medio4"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#000000"
+                android:textColor="#e65100"
                 android:text="Difficile: 0"
                 android:textSize="20dp"
                 android:id="@+id/difficile4"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#000000"
+                android:textColor="#d50000"
                 android:text="Impossibile: 0"
                 android:textSize="20dp"
                 android:id="@+id/impossibile4"/>
@@ -178,7 +189,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Indietro"
-                android:id="@+id/indietro"/>
+                android:id="@+id/indietro"
+                android:background="@drawable/intbutton"/>
 
 
         </LinearLayout>
