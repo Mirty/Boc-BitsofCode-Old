@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/sfondo"
+    android:background="#F9F2E7">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/helpbutton"
+            android:text=" ?"
+            android:background="@android:color/transparent"
+            android:textColor="#00838F"
+            android:textSize="22dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    if "
+            android:textSize="22dp"
+            android:textColor="#9C27B0"
+            android:id="@+id/se"
+            />
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="22dp" />
+        <TextView
+            android:layout_width="201dp"
+            android:layout_height="wrap_content"
+            android:text="condizione"
+            android:textSize="22dp"
+            android:textColor="#FF5722"
+            android:id="@+id/condizione"/>
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="22dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="{"
+            android:textSize="22dp"
+            android:textColor="#9C27B0"
+            android:id="@+id/primagraffa"/>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="ramothen"
+        android:textSize="22dp"
+        android:textColor="#00838F"
+        android:id="@+id/ramoThen"
+        android:gravity="center"
+        />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="}"
+            android:textSize="22dp"
+            android:textColor="#9C27B0"
+            android:id="@+id/graffa"
+            android:layout_weight="0.79" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="     else   "
+            android:textSize="22dp"
+            android:textColor="#9C27B0"
+            android:id="@+id/altrimenti"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="{"
+            android:textSize="22dp"
+            android:textColor="#9C27B0"
+            android:id="@+id/graffa1"/>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="ramoelse"
+        android:textSize="22dp"
+        android:textColor="#00838F"
+        android:id="@+id/ramoElse"
+        android:gravity="center"
+        />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="     }"
+            android:textSize="22dp"
+            android:textColor="#9C27B0"
+            android:id="@+id/graffa2"
+            />
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent"/>
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="BRAVOfH"
+            android:id="@+id/bottone1"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            android:background="@drawable/stringbutton"
+            android:textAllCaps="false"/>
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Djanni"
+            android:id="@+id/bottone2"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            android:background="@drawable/stringbutton"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent"/>
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="''ciao''"
+            android:id="@+id/bottone3"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            android:background="@drawable/stringbutton"
+            android:textAllCaps="false"/>
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent"/>
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="684"
+            android:id="@+id/bottone4"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            android:background="@drawable/stringbutton"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_centerHorizontal="true">
+
+
+        <Button
+            android:layout_width="195dp"
+            android:layout_height="wrap_content"
+            android:text="Avanti"
+            android:id="@+id/avanti"
+            android:textColor="#fff"
+            android:textSize="35dp"
+            android:background="@drawable/intbutton"
+            android:textAllCaps="false"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

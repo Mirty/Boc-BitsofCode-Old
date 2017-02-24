@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:id="@+id/sfondo"
+    android:background="#F9F2E7"
+    tools:context="com.example.andrea.boc_bitsofcode.Livello1"
+    >
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:id="@+id/consegna"
+        android:text="Seleziona il corretto tipo di dato di:"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:textColor="#6A1B9A"
+        />
+
+
+    <Button
+        android:layout_width="130dip"
+        android:layout_height="wrap_content"
+        android:text="BOOL"
+        android:textSize="40dp"
+        android:textColor="#fff"
+        android:id="@+id/booleani"
+        android:background="@drawable/boolbutton"
+        android:fontFamily="Roboto"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="28dp" />
+
+
+    <Button
+        android:layout_width="130dip"
+        android:layout_height="wrap_content"
+        android:text="STRING"
+        android:textSize="40dp"
+        android:textColor="#fff"
+        android:id="@+id/stringa"
+        android:background="@drawable/stringbutton"
+        android:fontFamily="Comics Sans MS"
+        android:padding="10dp"
+        android:layout_alignBaseline="@+id/booleani"
+        android:layout_alignBottom="@+id/booleani"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="130dip"
+        android:layout_height="wrap_content"
+        android:text="FLOAT"
+        android:textSize="40dp"
+        android:textColor="#fff"
+        android:id="@+id/reali"
+        android:background="@drawable/floatbutton"
+        android:fontFamily="Roboto"
+        android:padding="10dp"
+        android:layout_alignBaseline="@+id/interi"
+        android:layout_alignBottom="@+id/interi"
+        android:layout_alignParentEnd="true" />
+
+
+    <Button
+        android:layout_width="130dip"
+        android:layout_height="wrap_content"
+        android:text="INT"
+        android:textSize="40dp"
+        android:textColor="#fff"
+        android:id="@+id/interi"
+        android:background="@drawable/intbutton"
+        android:fontFamily="Roboto"
+        android:padding="10dp"
+        android:layout_above="@+id/stringa"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="23dp" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/text"
+        android:textColor="#00838F"
+        android:text="prova"
+        android:textSize="60dp"
+        android:padding="8dp"
+        android:textAlignment="center"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/consegna"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
+
+

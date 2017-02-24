@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+              android:background="#F9F2E7"
+    android:padding="20dp">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textSize="40dp"
+        android:background="@drawable/stringbutton"
+        android:textColor="#FFFF"
+        android:text="Nuovo"
+        android:id="@+id/nuovo"
+        android:textAllCaps="false"
+        android:layout_marginTop="30dp"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:textSize="40dp"
+        android:layout_height="80dp"
+        android:background="@drawable/intbutton"
+        android:textColor="#FFFF"
+        android:text="Continua"
+        android:id="@+id/continua"
+        android:textAllCaps="false"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Duello"
+        android:id="@+id/duello"
+        android:background="@drawable/boolbutton"
+        android:textColor="#FFFF"
+        android:textSize="40dp"
+        android:textAllCaps="false"/>
+</LinearLayout>

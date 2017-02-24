@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:id="@+id/sfondo"
+    android:background="#F9F2E7">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="else"
+        android:textSize="25dp"
+        android:textColor="#9C27B0"
+        android:id="@+id/altrimenti"
+        android:layout_below="@+id/graffa2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="{"
+        android:textSize="25dp"
+        android:textColor="#9C27B0"
+        android:id="@+id/graffaopen2"
+        android:layout_marginLeft="3dp"
+        android:layout_marginStart="21dp"
+        android:layout_above="@+id/ramoElse"
+        android:layout_toEndOf="@+id/altrimenti" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ramoelse"
+        android:textSize="25dp"
+        android:textColor="#00838F"
+        android:id="@+id/ramoElse"
+        android:layout_below="@+id/altrimenti"
+        android:layout_toEndOf="@+id/se"
+        android:layout_marginTop="14dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ramothen"
+        android:textSize="25dp"
+        android:textColor="#00838F"
+        android:id="@+id/ramoThen"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/se"
+        android:layout_toEndOf="@+id/se" />
+
+    <Button
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textColor="#fff"
+        android:text="Avanti"
+        android:id="@+id/avanti"
+        android:background="@drawable/intbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:text="SOTTO"
+        android:textColor="#fff"
+        android:textSize="10dp"
+        android:id="@+id/sotto"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="b1"
+        android:id="@+id/bottone1"
+        android:textColor="#fff"
+        android:textSize="25dp"
+        android:background="@drawable/stringbutton"
+        android:layout_above="@+id/sotto"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="65dp"
+        android:textAllCaps="false"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="}"
+        android:textSize="25dp"
+        android:textColor="#9C27B0"
+        android:id="@+id/graffa2"
+        android:layout_below="@+id/ramoThen"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="}"
+        android:textSize="25dp"
+        android:textColor="#9C27B0"
+        android:id="@+id/graffa"
+        android:layout_below="@+id/ramoElse"
+        android:layout_alignParentStart="true"
+        android:textAllCaps="false" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="b2"
+        android:id="@+id/bottone2"
+        android:textColor="#fff"
+        android:textSize="25dp"
+        android:background="@drawable/stringbutton"
+        android:layout_above="@+id/sotto"
+        android:layout_alignParentStart="true"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="{"
+        android:textSize="25dp"
+        android:textColor="#9C27B0"
+        android:id="@+id/graffa1"
+        android:layout_marginLeft="3dp"
+        android:layout_alignBaseline="@+id/condizione"
+        android:layout_alignBottom="@+id/condizione"
+        android:layout_toEndOf="@+id/condizione" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="condizione"
+        android:textSize="25dp"
+        android:textColor="#FF5722"
+        android:id="@+id/condizione"
+        android:layout_above="@+id/ramoThen"
+        android:layout_toEndOf="@+id/se" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="if "
+        android:textSize="25dp"
+        android:textColor="#9C27B0"
+        android:id="@+id/se"
+        android:layout_marginTop="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/helpbutton"
+        android:text=" ?"
+        android:background="@android:color/transparent"
+        android:textColor="#00838F"
+        android:textSize="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/graffa1" />
+
+</RelativeLayout>
+
+
+

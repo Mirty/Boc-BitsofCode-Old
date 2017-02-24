@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:background="#AED581"
+    >
+
+    <TextView
+        android:text="Inserisci il testo:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inserisci2"
+        android:textSize="24dp"
+        android:textColor="#6A1B9A"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_marginTop="11dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Conferma"
+        android:textSize="35dp"
+        android:textColor="#EEFF41"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:id="@+id/conferma2"
+        android:background="@drawable/confermabutton_dialog"
+        android:layout_marginBottom="22dp"
+        android:layout_above="@id/inserisci2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/testoParla2"
+        android:background="@drawable/parlatextview"
+        android:padding="10dp"
+        android:lineSpacingExtra="3dp"
+        android:textSize="23dp"
+        android:textColor="#607D8B"
+        android:gravity="top"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/inserisci2"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_below="@+id/conferma"
+        android:textSize="12dp"
+        android:layout_marginTop="27dp"
+        android:id="@+id/quesito"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:id="@+id/textView3"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="22dp"/>
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:maxLength="2"
+        android:textSize="12dp"
+        android:ems="10"
+        android:id="@+id/risposta"
+        android:layout_toEndOf="@+id/conferma"
+        android:layout_marginStart="10dp"
+        android:layout_alignTop="@+id/textView3"/>
+
+    <Button
+        android:text="Conferma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/conferma"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/textRobot"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@+id/quesito"
+        android:layout_alignEnd="@+id/textView3"/>
+
+    <Button
+        android:text="AVANTI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textRobot"
+        android:layout_alignStart="@+id/risposta"
+        android:layout_marginStart="20dp"
+        android:id="@+id/avanti"/>
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+                android:background="#F0F4C3">
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textSize="30dp"
+        android:textColor="#0D47A1"
+        android:textAlignment="center"
+        android:layout_marginTop="22dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textRobot"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:textSize="33dp"
+        android:textColor="#DA28C8"
+        android:maxLines="5"
+        android:layout_below="@+id/quesito"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="AVANTI"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:background="@drawable/intbutton"
+        android:textColor="#FFFFFF"
+        android:id="@+id/avanti"
+        android:layout_below="@+id/textRobot"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:maxLength="2"
+        android:textSize="30dp"
+        android:textColor="#0277BD"
+        android:layout_margin="20dp"
+        android:ems="10"
+        android:id="@+id/risposta"
+        android:background="@drawable/parlatextview"
+        android:textAlignment="center"
+        android:layout_marginTop="47dp"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Conferma"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/conferma"
+        android:layout_margin="10dp"
+        android:background="@drawable/boolbutton"
+        android:textColor="#FFFFFF"
+        android:textSize="35dp"
+        android:layout_below="@+id/risposta"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:textColor="#5E35B1"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:id="@+id/quesito"
+        android:layout_alignBaseline="@+id/risposta"
+        android:layout_alignBottom="@+id/risposta"
+        android:layout_alignStart="@+id/textRobot" />
+</RelativeLayout>

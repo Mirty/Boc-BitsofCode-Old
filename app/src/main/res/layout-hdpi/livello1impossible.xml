@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F2E7">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/helpbutton"
+        android:text=" ?"
+        android:background="@android:color/transparent"
+        android:textColor="#00838F"
+        android:textSize="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="conferma"
+        android:id="@+id/conferma"
+        android:background="@drawable/intbutton"
+        android:backgroundTint="#00BCD4"
+        android:textColor="#fff"
+        android:textSize="40dp"
+        android:layout_marginBottom="20dp"
+        android:textAlignment="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dichiara la variabile"
+        android:textAlignment="center"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textColor="#6A1B9A"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:id="@+id/last"
+        android:text="last"
+        android:layout_below="@+id/textView2"
+        android:layout_alignEnd="@+id/domanda" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:id="@+id/domanda"
+        android:text="domanda"
+        android:textColor="#00838F"
+        android:layout_marginTop="22dp"
+        android:textAlignment="center"
+        android:layout_below="@+id/last"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/risposta"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:gravity="top"
+        android:textColor="#4CAF50"
+        android:backgroundTint="#00838F"
+        android:layout_marginBottom="18dp"
+        android:layout_above="@+id/conferma"
+        android:layout_alignStart="@+id/domanda" />
+
+
+</RelativeLayout>

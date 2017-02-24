@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="45dp"
+        android:text="I tuoi punteggi:"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:id="@+id/textView" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Livello1"
+                android:textSize="30dp"
+                android:textColor="#000000"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="Normale: 0"
+                    android:textSize="20dp"
+                    android:id="@+id/normale1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Medio: 0"
+                android:textSize="20dp"
+                android:id="@+id/medio1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Difficile: 0"
+                android:textSize="20dp"
+                android:id="@+id/difficile1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Impossibile: 0"
+                android:textSize="20dp"
+                android:id="@+id/impossibile1"/>
+            <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Livello2"
+                android:textSize="30dp"
+                android:textColor="#000000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Normale: 0"
+                android:textSize="20dp"
+                android:id="@+id/normale2"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Medio: 0"
+                android:textSize="20dp"
+                android:id="@+id/medio2"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Difficile: 0"
+                android:textSize="20dp"
+                android:id="@+id/difficile2"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Impossibile: 0"
+                android:textSize="20dp"
+                android:id="@+id/impossibile2"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Livello3"
+                android:textSize="30dp"
+                android:textColor="#000000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Normale: 0"
+                android:textSize="20dp"
+                android:id="@+id/normale3"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Medio: 0"
+                android:textSize="20dp"
+                android:id="@+id/medio3"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Difficile: 0"
+                android:textSize="20dp"
+                android:id="@+id/difficile3"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Impossibile: 0"
+                android:textSize="20dp"
+                android:id="@+id/impossibile3"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Livello4"
+                android:textSize="30dp"
+                android:textColor="#000000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Normale: 0"
+                android:textSize="20dp"
+                android:id="@+id/normale4"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Medio: 0"
+                android:textSize="20dp"
+                android:id="@+id/medio4"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Difficile: 0"
+                android:textSize="20dp"
+                android:id="@+id/difficile4"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Impossibile: 0"
+                android:textSize="20dp"
+                android:id="@+id/impossibile4"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Indietro"
+                android:id="@+id/indietro"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

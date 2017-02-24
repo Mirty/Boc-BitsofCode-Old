@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <Button
+        android:text="INT"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/interi"
+        android:layout_margin = "0dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="FLOAT"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/decimali"
+        android:layout_marginLeft="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="BOOLEAN"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/booleani"
+        android:layout_marginLeft="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="STRING"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/stringhe"
+        android:layout_marginLeft="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/quesito"
+        android:layout_above="@+id/booleani"
+        android:layout_alignParentStart="true"
+        android:textSize="50dp"/>
+
+
+</RelativeLayout>

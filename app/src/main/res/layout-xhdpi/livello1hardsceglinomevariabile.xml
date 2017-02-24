@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F2E7">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/helpbutton"
+        android:text=" ?"
+        android:background="@android:color/transparent"
+        android:textColor="#00838F"
+        android:textSize="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:id="@+id/domanda"
+        android:text="prova"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:textColor="#6A1B9A"
+        />
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="CONTINUA"
+        android:id="@+id/conferma"
+        android:background="@drawable/intbutton"
+        android:backgroundTint="#00BCD4"
+        android:textColor="#fff"
+        android:textSize="40dp"
+        android:layout_marginBottom="20dp"
+        android:textAlignment="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/nome"
+        android:text="tipo var"
+        android:textAlignment="center"
+        android:textSize="35dp"
+        android:gravity="top"
+        android:textColor="#4CAF50"
+        android:backgroundTint="#00838F"
+        android:layout_above="@+id/conferma"
+        android:layout_alignStart="@+id/consegna"
+        android:layout_marginBottom="17dp" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="hint"
+        android:textColor="#6A1B9A"
+        android:id="@+id/hint"
+        android:textAlignment="center"
+        android:layout_marginTop="41dp"
+        android:layout_below="@+id/consegna"
+        android:layout_alignStart="@+id/consegna">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:text="consegna"
+        android:textColor="#00838F"
+        android:id="@+id/consegna"
+        android:textAlignment="center"
+        android:layout_marginTop="44dp"
+        android:layout_below="@+id/domanda"
+        android:layout_alignStart="@+id/domanda" />
+
+</RelativeLayout>

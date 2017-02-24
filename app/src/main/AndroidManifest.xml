@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.andrea.boc_bitsofcode">
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icona"
+        android:label="BoC"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Start">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Livello1"/>
+        <activity android:name=".Vittoria"/>
+        <activity android:name=".Livello1diff"/>
+        <activity android:name=".MenuLivelli"/>
+        <activity android:name=".NewContinue"/>
+        <activity android:name=".CaricaProfilo"/>
+        <activity android:name=".SelezionaSlotDaScrivere"/>
+        <activity android:name=".CreaProfilo"/>
+        <activity android:name=".Livello1Medium"/>
+        <activity android:name=".Vittoria1Media"/>
+        <activity android:name=".Livello2"/>
+        <activity android:name=".Livello1Hard"/>
+        <activity android:name=".Livello1HardII"/>
+        <activity android:name=".Livello1HardIII"/>
+        <activity android:name=".Livello1HardRiepilogo"/>
+        <activity android:name=".Vittoria1Hard"/>
+        <activity android:name=".Livello2medio"/>
+        <activity android:name=".Vittoria2media"/>
+        <activity android:name=".Livello2diff"/>
+        <activity android:name=".Livello1Impossible"/>
+        <activity android:name=".Vittoria1Impossible"/>
+        <activity android:name=".Livello3Normale"/>
+        <activity android:name=".Vittoria3Normale"/>
+        <activity android:name=".Livello3Medium"/>
+        <activity android:name=".Vittoria3Medium"/>
+        <activity android:name=".Livello3Hard"/>
+        <activity android:name=".Vittoria3Hard"/>
+        <activity android:name=".Livello4Normale"/>
+        <activity android:name=".Livello4medio"/>
+        <activity android:name=".Livello4Diff"/>
+        <activity android:name=".Vittoria4"/>
+        <activity android:name=".MostraPunteggi"/>
+        <activity android:name=".Livello3Impossible"/>
+        <activity android:name=".Vittoria3Impossible"/>
+        <activity android:name=".Livello4Impossible"/>
+        <activity android:name=".Vittoria4Impossible"/>
+        <activity android:name=".Vittoria4medium"/>
+        <activity android:name=".Vittoria4Hard"/>
+        <activity android:name=".Tutorial1facile"/>
+        <activity android:name=".Tutorial1Medio"/>
+        <activity android:name=".Tutorial1Difficile"/>
+        <activity android:name=".Tutorial1Impossibile"/>
+        <activity android:name=".Tutorial3Facile"/>
+        <activity android:name=".Tutorial3Medio"/>
+        <activity android:name=".Tutorial3Difficile"/>
+        <activity android:name=".Tutorial3Impossibile"/>
+
+    </application>
+
+</manifest>

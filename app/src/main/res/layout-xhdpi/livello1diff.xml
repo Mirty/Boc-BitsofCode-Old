@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+              android:background="#F9F2E7"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Seleziona la difficoltà"
+        android:textSize="36dp"
+        android:textAlignment="center"
+        android:textColor="#00838F"
+        android:id="@+id/textV2"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="35dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/parlatextview"
+        android:text="Normale"
+        android:textSize="40dp"
+        android:textColor="#64dd17"
+        android:id="@+id/normal"
+        android:textAllCaps="false"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/parlatextview"
+        android:text="Medio"
+        android:textSize="40dp"
+        android:textColor="#ffd600"
+        android:id="@+id/medium"
+        android:textAllCaps="false"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:background="@drawable/parlatextview"
+        android:layout_height="wrap_content"
+        android:text="Difficile"
+        android:textSize="40dp"
+        android:textColor="#e65100"
+        android:id="@+id/hard"
+        android:textAllCaps="false"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/parlatextview"
+        android:text="Impossibile"
+        android:textSize="40dp"
+        android:textColor="#d50000"
+        android:id="@+id/impossible"
+        android:textAllCaps="false"/>
+
+
+</LinearLayout>
