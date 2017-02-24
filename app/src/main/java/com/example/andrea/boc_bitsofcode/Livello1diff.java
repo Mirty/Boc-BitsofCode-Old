@@ -32,6 +32,8 @@ public class Livello1diff extends AppCompatActivity{
         difficile.setTypeface(consegne_font);
         impossibile.setTypeface(consegne_font);
 
+        textV2.setText("Livello" +(MenuLivelli.entra+1) +": seleziona la difficoltà");
+
 
 
         facile.setOnClickListener(new View.OnClickListener(){

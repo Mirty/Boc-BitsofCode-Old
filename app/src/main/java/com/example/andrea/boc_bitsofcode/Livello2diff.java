@@ -2,9 +2,13 @@ package com.example.andrea.boc_bitsofcode;
 
 import android.app.Dialog;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.os.Vibrator;
 import android.support.v7.app.AppCompatActivity;
+import android.text.method.ScrollingMovementMethod;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
@@ -21,7 +25,7 @@ import java.util.Random;
 
 public class Livello2diff extends AppCompatActivity {
 
-    Button interi, decimali, stringhe, booleani;
+    Button interi, decimali, stringhe, booleani, avanti;
     TextView quesito;
     String testoIn;
     public static boolean daActivity = false;
@@ -33,6 +37,8 @@ public class Livello2diff extends AppCompatActivity {
     static int punteggio = 500;
     String nomeFun;
     Random r = new Random();
+    CountDownTimer timer;
+    Typeface button_font, consegne_font, programming_font, default_font;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,6 +50,29 @@ public class Livello2diff extends AppCompatActivity {
         booleani = (Button) findViewById(R.id.booleani);
         stringhe = (Button) findViewById(R.id.stringhe);
         quesito = (TextView) findViewById(R.id.quesito);
+
+        button_font = Typeface.createFromAsset(getAssets(),  "fonts/Acids!.otf");
+        consegne_font = Typeface.createFromAsset(getAssets(),  "fonts/DK The Cats Whiskers.otf");
+        programming_font = Typeface.createFromAsset(getAssets(),  "fonts/Courier New.ttf");
+        default_font = Typeface.createFromAsset(getAssets(),  "fonts/Roboto-Regular.ttf");
+        interi.setTypeface(button_font);
+        decimali.setTypeface(button_font);
+        booleani.setTypeface(button_font);
+        stringhe.setTypeface(button_font);
+        quesito.setTypeface(consegne_font);
+
+        timer = new CountDownTimer(500, 100) { //Inizializzo il timer per la gestione del cambiamento di colore
+            @Override
+            public void onTick(long millisUntilFinished) {
+                quesito.setTextColor(Color.RED);
+            }
+
+            @Override
+            public void onFinish() {
+                quesito.setTextColor(Color.parseColor("#3F51B5"));
+            }
+        };
+
 
         q = gq.generaq2();
         nomeFun = q.getNome();
@@ -61,6 +90,7 @@ public class Livello2diff extends AppCompatActivity {
                                 punteggio +=50;
                                 step1();
                             } else {
+                                timer.start();
                                 punteggio -= 5;
                                 v.vibrate(500);
                             }
@@ -71,6 +101,7 @@ public class Livello2diff extends AppCompatActivity {
                                 step2();
 
                             } else {
+                                timer.start();
                                 punteggio -=5;
                                 v.vibrate(500);
                             }
@@ -82,6 +113,7 @@ public class Livello2diff extends AppCompatActivity {
                                 step3();
 
                             } else {
+                                timer.start();
                                 punteggio -=50;
                                 v.vibrate(500);
                             }
@@ -101,6 +133,7 @@ public class Livello2diff extends AppCompatActivity {
                             step1();
 
                         } else {
+                            timer.start();
                             punteggio -=5;
                             v.vibrate(500);
                         }
@@ -111,6 +144,7 @@ public class Livello2diff extends AppCompatActivity {
                             step2();
 
                         } else {
+                            timer.start();
                             punteggio -=5;
                             v.vibrate(500);
                         }
@@ -121,6 +155,7 @@ public class Livello2diff extends AppCompatActivity {
                             step3();
 
                         } else {
+                            timer.start();
                             punteggio -=5;
                             v.vibrate(500);
                         }
@@ -143,6 +178,7 @@ public class Livello2diff extends AppCompatActivity {
                             step1();
 
                         } else {
+                            timer.start();
                             punteggio -=5;
                             v.vibrate(500);
                         }
@@ -153,6 +189,7 @@ public class Livello2diff extends AppCompatActivity {
                             step2();
 
                         } else {
+                            timer.start();
                             punteggio -=5;
                             v.vibrate(500);
                         }
@@ -164,6 +201,7 @@ public class Livello2diff extends AppCompatActivity {
                             step3();
 
                         } else {
+                            timer.start();
                             punteggio -=5;
                             v.vibrate(500);
                         }
@@ -183,6 +221,7 @@ public class Livello2diff extends AppCompatActivity {
                             step1();
 
                         } else {
+                            timer.start();
                             punteggio -=5;
                             v.vibrate(500);
                         }
@@ -193,6 +232,7 @@ public class Livello2diff extends AppCompatActivity {
                             step2();
 
                         } else {
+                            timer.start();
                             punteggio -=5;
                             v.vibrate(500);
                         }
@@ -202,6 +242,7 @@ public class Livello2diff extends AppCompatActivity {
                             punteggio +=50;
                             step3();
                         } else {
+                            timer.start();
                             punteggio -=5;
                             v.vibrate(500);
                         }
@@ -217,6 +258,15 @@ public class Livello2diff extends AppCompatActivity {
         booleani.setVisibility(View.GONE);
         decimali.setVisibility(View.GONE);
         stringhe.setVisibility(View.GONE);
+
+        interi.setTypeface(default_font);
+        booleani.setTypeface(default_font);
+        decimali.setTypeface(default_font);
+        stringhe.setTypeface(default_font);
+        interi.setTextSize(24.0f);
+        booleani.setTextSize(24.0f);
+        decimali.setTextSize(24.0f);
+        stringhe.setTextSize(24.0f);
 
         quesito.setText("Scegli il nome della funzione: ");
 
@@ -257,6 +307,14 @@ public class Livello2diff extends AppCompatActivity {
         decimali.setVisibility(View.GONE);
         stringhe.setVisibility(View.GONE);
 
+        interi.setTypeface(button_font);
+        booleani.setTypeface(button_font);
+        decimali.setTypeface(button_font);
+        stringhe.setTypeface(button_font);
+        interi.setTextSize(37.0f);
+        booleani.setTextSize(37.0f);
+        decimali.setTextSize(37.0f);
+        stringhe.setTextSize(37.0f);
 
         quesito.setText("Scegli il tipo del parametro da assegnare: ");
 
@@ -333,12 +391,14 @@ public class Livello2diff extends AppCompatActivity {
             public void onClick(View view) {
                 testoIn = testoParla3.getText().toString();
                 if (testoIn.equals("restituisci " + q.getNomeVar() + ";")) {
+                    quesito.setTextSize(23f);
                     quesito.setVisibility(View.VISIBLE);
                     quesito.append(testoIn + "\n\n }");
                     step++;
                     stringhe.setVisibility(View.VISIBLE);
                     stringhe.setText("AVANTI");
                     dialog3.dismiss();
+                    quesito.setTextSize(43f);
                 } else {
                     v.vibrate(500);
                 }
